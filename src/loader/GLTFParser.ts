@@ -293,7 +293,6 @@ class GLTFParser {
         return result;
     }
 
-    // eslint-disable-next-line class-methods-use-this
     isUseExtension(data: any, extensionName: string): boolean {
         return !!(data && data.extensions && data.extensions[extensionName]);
     }
@@ -1137,7 +1136,6 @@ class GLTFParser {
         });
     }
 
-    // eslint-disable-next-line class-methods-use-this
     handlerNodeTransform(node: any, data: any): void {
         if (data.matrix) {
             node.matrix.fromArray(data.matrix);
