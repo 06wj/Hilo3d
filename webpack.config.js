@@ -37,13 +37,6 @@ module.exports = function(env, argv) {
                     }]
                 }
             }, {
-                enforce: 'pre',
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'eslint-loader'
-                }
-            }, {
                 test: /\.(glsl|frag|vert)$/,
                 exclude: /node_modules/,
                 loader: 'glslify-import-loader'
